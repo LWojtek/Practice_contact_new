@@ -22,8 +22,15 @@ nav {
             font-size: 1.6rem;
             text-transform: uppercase;
             display: inline;
-            font-weight: bold
+            font-weight: bold;
+
+            &.active,
+            &:hover {
+                  border-bottom: 1px solid rgb(0, 159, 170);
+            }
       }
+
+
 
       >div {
             display: flex;

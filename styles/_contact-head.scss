@@ -1,0 +1,85 @@
+.contact__head {
+      width: 100%;
+
+      .container {
+            >div {
+                  padding-left: 15.2rem;
+                  padding-top: 6.2rem;
+                  padding-bottom: 6.2rem;
+            }
+      }
+}
+
+.contact__content {
+      display: flex;
+      justify-content: space-between;
+}
+
+.contact__content--text {
+
+      flex-basis: 50%;
+
+      h2 {
+            font-size: 6rem;
+      }
+
+      p {
+            font-size: 1.6rem;
+            max-width: 500px;
+      }
+}
+
+.contact__content--locations {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex
+}
+
+.tab__wrapper {
+      display: flex;
+
+      &:first-child {
+            position: relative;
+            border-bottom: none !important;
+
+            &::before {
+                  content: "";
+                  background: var(--pri-den-gray-005);
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  right: 0px;
+                  bottom: 0px;
+                  z-index: -1;
+                  width: 100vw;
+            }
+      }
+
+}
+
+.tab {
+      flex-basis: 70%;
+      padding: 4.5rem;
+
+
+      h3 {
+            font-size: 2rem;
+            letter-spacing: .15rem;
+      }
+
+      p {
+            margin-top: .5rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+      }
+
+      a {
+            font-size: 1.6rem;
+            width: 100%;
+      }
+}
+
+.underline {
+      border-bottom: 1px solid var(--pri-den-gray-010);
+}

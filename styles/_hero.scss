@@ -14,7 +14,7 @@
 
 .hero__image--stroke {
       position: absolute;
-      bottom: 5px;
+      bottom: 0;
       right: 0;
 }
 
@@ -22,13 +22,12 @@
       display: flex;
       padding-left: 15.2rem;
       align-items: center;
-      min-height: 61.1rem;
+      min-height: 60.1rem;
 }
 
 .hero__text {
       font-family: 'brushstrike', sans-serif;
       color: white;
-      max-height: 200px;
 
       h1 {
             font-size: 5rem;

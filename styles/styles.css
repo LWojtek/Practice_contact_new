@@ -129,6 +129,8 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 3;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav ul {
@@ -155,6 +157,8 @@ nav a {
   text-transform: uppercase;
   display: inline;
   font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav a.active, nav a:hover {

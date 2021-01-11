@@ -44,12 +44,20 @@
             font-weight: lighter;
             font-style: italic;
             max-width: 84rem;
+            opacity: 0;
+            animation: appear .5s ease-in forwards,
+                  from-right .2s ease-in-out forwards;
       }
 
       p {
             font-size: 11.2rem;
             font-weight: bold;
             letter-spacing: .5rem;
+            opacity: 0;
+            animation: appear .5s ease-in forwards,
+                  from-bottom .3s ease-in-out forwards;
+            animation-delay: .5s;
+
       }
 }
 

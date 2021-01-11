@@ -21,11 +21,19 @@
 
       h2 {
             font-size: 6rem;
+            opacity: 0;
+            animation: appear .5s ease-in forwards,
+                  from-right .5s ease-in-out forwards;
+            animation-delay: .8s;
       }
 
       p {
             font-size: 1.6rem;
             max-width: 500px;
+            opacity: 0;
+            animation: appear .5s ease-in forwards,
+                  from-bottom .5s ease-in-out forwards;
+            animation-delay: 1s;
       }
 }
 

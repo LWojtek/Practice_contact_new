@@ -296,6 +296,12 @@ nav > div {
   padding-bottom: 6.2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact__head .container > div {
+    padding: 6.2rem 0;
+  }
+}
+
 .contact__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +325,12 @@ nav > div {
           animation-delay: .8s;
 }
 
+@media screen and (max-width: 1024px) {
+  .contact__content--text h2 {
+    padding-left: 6.2rem;
+  }
+}
+
 .contact__content--text p {
   font-size: 1.6rem;
   max-width: 500px;
@@ -327,6 +339,12 @@ nav > div {
           animation: appear .5s ease-in forwards, from-bottom .5s ease-in-out forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__content--text p {
+    padding-left: 6.2rem;
+  }
 }
 
 .contact__content--locations {
@@ -357,7 +375,7 @@ nav > div {
 
 .tab__wrapper:first-child::before {
   content: "";
-  background: var(--pri-den-gray-005);
+  background: var(--pri-den-gray-010);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -370,7 +388,7 @@ nav > div {
 .tab {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  padding: 4.5rem;
+  padding: 6.5rem 4.5rem;
 }
 
 .tab h3 {

@@ -261,6 +261,11 @@
             padding-left: 15.2rem;
             padding-top: 8.2rem;
             padding-bottom: 6.2rem;
+
+            @media screen and(max-width:1023px) {
+                  padding-left: 6.2rem;
+            }
+
       }
 
       p {

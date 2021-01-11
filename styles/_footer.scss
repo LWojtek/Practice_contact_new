@@ -4,6 +4,10 @@ footer {
       >div {
             padding-left: 6.2rem;
             padding-right: 6.2rem;
+
+            @media screen and(max-width:1023px) {
+                  padding: 0 3rem;
+            }
       }
 }
 
@@ -29,14 +33,23 @@ footer {
       padding-top: 1.8rem;
       position: absolute;
 
+
+      @media screen and(max-width:1024px) {
+            position: relative;
+            transform: scale(.7);
+      }
+
 }
 
 .contact__wrapper {
       display: flex;
       justify-content: flex-end;
-
       align-items: center;
       color: #fff;
+
+      @media screen and(max-width:1023px) {
+            display: block;
+      }
 
 
       h2 {
@@ -82,6 +95,11 @@ footer {
 .contact__container {
       display: flex;
       padding: 4.5rem;
+
+
+      @media screen and(max-width:1023px) {
+            justify-content: space-between;
+      }
 }
 
 .footer {
@@ -96,6 +114,12 @@ footer {
             align-items: center;
             justify-content: space-between;
             border-top: 1px solid var(--pri-den-gray-080);
+
+            @media screen and(max-width:1024px) {
+                  display: block;
+            }
+
+
       }
 }
 
@@ -103,6 +127,11 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 1rem 0;
+
+      @media screen and(max-width:1024px) {
+            justify-content: flex-start;
+      }
+
 
       ul {
             padding: 1rem 0;

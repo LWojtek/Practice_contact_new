@@ -17,6 +17,11 @@
 .contact__content {
       display: flex;
       justify-content: space-between;
+
+      @media screen and(max-width:624px) {
+            display: block;
+      }
+
 }
 
 .contact__content--text {
@@ -33,6 +38,11 @@
             @media screen and(max-width:1024px) {
                   padding-left: 6.2rem;
             }
+
+            @media screen and(max-width:624px) {
+                  font-size: 3.2rem;
+                  padding-left: 1rem;
+            }
       }
 
       p {
@@ -46,6 +56,12 @@
             @media screen and(max-width:1024px) {
                   padding-left: 6.2rem;
             }
+
+            @media screen and(max-width:624px) {
+                  font-size: 1.4rem;
+                  padding-left: 1rem;
+                  padding-bottom: 2rem;
+            }
       }
 }
 
@@ -53,11 +69,20 @@
       flex-basis: 50%;
       display: flex;
       flex-direction: column;
-      align-items: flex
+
+
+      @media screen and(max-width:624px) {
+            display: block;
+      }
 }
 
 .tab__wrapper {
       display: flex;
+
+      @media screen and(max-width:624px) {
+            display: block;
+      }
+
 
       &:first-child {
             position: relative;
@@ -80,7 +105,11 @@
 
 .tab {
       flex-basis: 70%;
-      padding: 6.5rem 4.5rem;
+      padding: 2.5rem 1rem;
+
+      @media screen and(max-width:624px) {
+            display: block;
+      }
 
 
       h3 {
@@ -99,6 +128,8 @@
             width: 100%;
             color: var(--pri-freshwater-blue-100-default);
       }
+
+
 }
 
 .underline {

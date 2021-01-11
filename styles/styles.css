@@ -143,6 +143,18 @@ nav ul {
   text-align: center;
 }
 
+@media screen and (max-width: 624px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: none;
+  }
+}
+
 nav li {
   display: inline-block;
   list-style-type: none;
@@ -185,6 +197,14 @@ nav > div {
           box-sizing: content-box;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav__logo {
+    padding: .5rem;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .hero__wrapper {
   position: relative;
   width: 100%;
@@ -207,10 +227,22 @@ nav > div {
   right: 0;
 }
 
+@media screen and (max-width: 624px) {
+  .hero__image--stroke {
+    right: -200px;
+  }
+}
+
 .hero__image--cutout {
   position: absolute;
   bottom: -3px;
   right: 0;
+}
+
+@media screen and (max-width: 624px) {
+  .hero__image--cutout {
+    right: -220px;
+  }
 }
 
 .hero__wrapper--content {
@@ -222,6 +254,13 @@ nav > div {
       -ms-flex-align: center;
           align-items: center;
   min-height: 61.1rem;
+}
+
+@media screen and (max-width: 624px) {
+  .hero__wrapper--content {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .hero__text {
@@ -236,8 +275,16 @@ nav > div {
   font-style: italic;
   max-width: 84rem;
   opacity: 0;
-  -webkit-animation: appear .5s ease-in forwards, from-right .2s ease-in-out forwards;
-          animation: appear .5s ease-in forwards, from-right .2s ease-in-out forwards;
+  -webkit-animation: appear .5s ease-in forwards, from-right .5s ease-in-out forwards;
+          animation: appear .5s ease-in forwards, from-right .5s ease-in-out forwards;
+}
+
+@media screen and (max-width: 624px) {
+  .hero__text h1 {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
 }
 
 .hero__text p {
@@ -251,11 +298,24 @@ nav > div {
           animation-delay: .5s;
 }
 
+@media screen and (max-width: 624px) {
+  .hero__text p {
+    font-size: 4rem;
+    padding-left: 2rem;
+  }
+}
+
 .page__devider {
   width: 100%;
   -webkit-box-shadow: 0 2px 10px #919191;
           box-shadow: 0 2px 10px #919191;
   background-color: var(--pri-den-gray-010);
+}
+
+@media screen and (max-width: 624px) {
+  .page__devider {
+    display: none;
+  }
 }
 
 .page__devider ul {
@@ -311,6 +371,12 @@ nav > div {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 624px) {
+  .contact__content {
+    display: block;
+  }
+}
+
 .contact__content--text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -331,6 +397,13 @@ nav > div {
   }
 }
 
+@media screen and (max-width: 624px) {
+  .contact__content--text h2 {
+    font-size: 3.2rem;
+    padding-left: 1rem;
+  }
+}
+
 .contact__content--text p {
   font-size: 1.6rem;
   max-width: 500px;
@@ -347,6 +420,14 @@ nav > div {
   }
 }
 
+@media screen and (max-width: 624px) {
+  .contact__content--text p {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .contact__content--locations {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -357,15 +438,24 @@ nav > div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: flex;
-      -ms-flex-align: flex;
-          align-items: flex;
+}
+
+@media screen and (max-width: 624px) {
+  .contact__content--locations {
+    display: block;
+  }
 }
 
 .tab__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 624px) {
+  .tab__wrapper {
+    display: block;
+  }
 }
 
 .tab__wrapper:first-child {
@@ -388,7 +478,13 @@ nav > div {
 .tab {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  padding: 6.5rem 4.5rem;
+  padding: 2.5rem 1rem;
+}
+
+@media screen and (max-width: 624px) {
+  .tab {
+    display: block;
+  }
 }
 
 .tab h3 {
@@ -422,14 +518,32 @@ nav > div {
   padding-bottom: 6.2rem;
 }
 
+@media screen and (max-width: 660px) {
+  .locations__text {
+    padding: 4rem 1rem;
+  }
+}
+
 .locations__text h2 {
   font-size: 6rem;
   opacity: 0;
 }
 
+@media screen and (max-width: 660px) {
+  .locations__text h2 {
+    font-size: 3.2rem;
+  }
+}
+
 .locations__text p {
   font-size: 1.6rem;
   opacity: 0;
+}
+
+@media screen and (max-width: 660px) {
+  .locations__text p {
+    font-size: 1.4rem;
+  }
 }
 
 .locations__wrapper {

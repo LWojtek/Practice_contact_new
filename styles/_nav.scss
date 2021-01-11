@@ -8,6 +8,15 @@ nav {
             display: flex;
             justify-content: center;
             text-align: center;
+
+            @media screen and(max-width:624px) {
+                  display: none;
+            }
+
+            @media screen and(max-width:1023px) {
+                  display: none;
+            }
+
       }
 
       li {
@@ -39,10 +48,16 @@ nav {
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+
       }
 }
 
 .nav__logo {
       padding: 1.8rem 0 1.8rem 6.2rem;
       box-sizing: content-box;
+
+      @media screen and(max-width:1024px) {
+            padding: .5rem;
+            transform: scale(.7);
+      }
 }

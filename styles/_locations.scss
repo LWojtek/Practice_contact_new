@@ -52,6 +52,35 @@
             background: var(--pri-den-gray-010);
             width: 100vw;
       }
+
+}
+
+.button {
+      position: relative;
+      padding: 2rem 10rem 1.8rem 1.8rem;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+
+
+      &:hover {
+            span {
+                  animation: line-move 1s ease-in-out infinite;
+            }
+      }
+}
+
+.button__line {
+      position: absolute;
+      top: 28px;
+      right: 20px;
+      width: 2rem;
+      height: 2px;
+      background-color: white;
+      vertical-align: middle;
 }
 
 .locations__cards {
@@ -77,18 +106,17 @@
       padding: 0 3rem;
       z-index: 1;
 
-      &::after {
-            position: absolute;
-            content: "";
-            height: 100px;
-            width: 100px;
-            right: 0;
-            bottom: -10px;
-            left: -10px;
-            z-index: -1;
-            background: #000;
-
-      }
+      // &::after {
+      //       position: absolute;
+      //       content: "";
+      //       height: 100px;
+      //       width: 100px;
+      //       right: 0;
+      //       bottom: -10px;
+      //       left: -10px;
+      //       z-index: -1;
+      //       background: #000;
+      // }
 }
 
 
@@ -120,11 +148,84 @@
 .card__footer {
       background-color: #fff;
       padding: 1.5rem;
+      text-align: left;
 
       a {
             display: inline-block;
             margin: 0 auto;
             font-size: 1.2rem;
-            padding: 1rem;
+            padding: 1rem 1rem 1rem 0;
+            color: var(--pri-freshwater-blue-100-default);
+            text-decoration: none;
+
+            &:hover {
+                  opacity: .9;
+            }
       }
+}
+
+.square {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: -1;
+      background: black;
+      bottom: -.8rem;
+      left: -.8rem;
+      background-image: linear-gradient(150deg, var(--pri-freshwater-blue-100-default) 4%, var(--pri-valley-green-100-default) 96%);
+}
+
+.button__contact {
+      position: relative;
+      padding: 0 10rem 1.8rem 0;
+      font-family: 'brushstrike', sans-serif;
+      font-size: 5rem;
+      line-height: 1;
+      border: none;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+
+
+      &:hover {
+            span {
+                  animation: line-move 1.2s ease-in-out infinite;
+            }
+      }
+}
+
+.contact {
+      position: relative;
+      background-color: transparent;
+      z-index: 0;
+
+      >div {
+            padding-left: 15.2rem;
+            padding-top: 8.2rem;
+            padding-bottom: 6.2rem;
+      }
+
+      p {
+            font-size: 1.6rem;
+            padding: 0;
+            margin: 0;
+      }
+}
+
+.button__contact--line {
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 1.5rem;
+      height: 2px;
+      background-color: black;
+      vertical-align: middle;
+}
+
+.hills {
+      position: absolute;
+      z-index: 999;
+      bottom: -1px;
+      right: 0;
 }

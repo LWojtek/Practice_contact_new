@@ -173,11 +173,10 @@ nav > div {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 6.2rem;
 }
 
 .nav__logo {
-  padding: 1.8rem 0;
+  padding: 1.8rem 0 1.8rem 6.2rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -365,6 +364,7 @@ nav > div {
 .tab a {
   font-size: 1.6rem;
   width: 100%;
+  color: var(--pri-freshwater-blue-100-default);
 }
 
 .underline {
@@ -430,6 +430,32 @@ nav > div {
   width: 100vw;
 }
 
+.button {
+  position: relative;
+  padding: 2rem 10rem 1.8rem 1.8rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover span {
+  -webkit-animation: line-move 1s ease-in-out infinite;
+          animation: line-move 1s ease-in-out infinite;
+}
+
+.button__line {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  width: 2rem;
+  height: 2px;
+  background-color: white;
+  vertical-align: middle;
+}
+
 .locations__cards {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
@@ -466,18 +492,6 @@ nav > div {
   z-index: 1;
 }
 
-.card::after {
-  position: absolute;
-  content: "";
-  height: 100px;
-  width: 100px;
-  right: 0;
-  bottom: -10px;
-  left: -10px;
-  z-index: -1;
-  background: #000;
-}
-
 .card__body {
   background-color: #fff;
   -webkit-box-flex: 1;
@@ -505,12 +519,245 @@ nav > div {
 .card__footer {
   background-color: #fff;
   padding: 1.5rem;
+  text-align: left;
 }
 
 .card__footer a {
   display: inline-block;
   margin: 0 auto;
   font-size: 1.2rem;
+  padding: 1rem 1rem 1rem 0;
+  color: var(--pri-freshwater-blue-100-default);
+  text-decoration: none;
+}
+
+.card__footer a:hover {
+  opacity: .9;
+}
+
+.square {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+  background: black;
+  bottom: -.8rem;
+  left: -.8rem;
+  background-image: linear-gradient(150deg, var(--pri-freshwater-blue-100-default) 4%, var(--pri-valley-green-100-default) 96%);
+}
+
+.button__contact {
+  position: relative;
+  padding: 0 10rem 1.8rem 0;
+  font-family: 'brushstrike', sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  border: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.button__contact:hover span {
+  -webkit-animation: line-move 1.2s ease-in-out infinite;
+          animation: line-move 1.2s ease-in-out infinite;
+}
+
+.contact {
+  position: relative;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.contact > div {
+  padding-left: 15.2rem;
+  padding-top: 8.2rem;
+  padding-bottom: 6.2rem;
+}
+
+.contact p {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.button__contact--line {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 1.5rem;
+  height: 2px;
+  background-color: black;
+  vertical-align: middle;
+}
+
+.hills {
+  position: absolute;
+  z-index: 999;
+  bottom: -1px;
+  right: 0;
+}
+
+@-webkit-keyframes line-move {
+  0%,
+  100% {
+    -webkit-transform: translateX(0) scaleX(0.35);
+            transform: translateX(0) scaleX(0.35);
+  }
+  50% {
+    -webkit-transform: translateX(-50px) scaleX(0.35);
+            transform: translateX(-50px) scaleX(0.35);
+  }
+}
+
+@keyframes line-move {
+  0%,
+  100% {
+    -webkit-transform: translateX(0) scaleX(0.35);
+            transform: translateX(0) scaleX(0.35);
+  }
+  50% {
+    -webkit-transform: translateX(-50px) scaleX(0.35);
+            transform: translateX(-50px) scaleX(0.35);
+  }
+}
+
+footer {
+  background-color: var(--pri-den-gray-100);
+}
+
+footer > div {
+  padding-left: 6.2rem;
+  padding-right: 6.2rem;
+}
+
+.social__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom: 1px solid var(--pri-den-gray-070);
+  padding: 2rem 0;
+}
+
+.social__icons i {
+  color: white;
+  font-size: 3rem;
   padding: 1rem;
+}
+
+.logo__footer {
+  padding-top: 1.8rem;
+  position: absolute;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.contact__wrapper h2 {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.contact__wrapper h3 {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.contact__wrapper p {
+  font-size: 1.3rem;
+}
+
+.contact__wrapper a {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  color: var(--pri-freshwater-blue-100-default);
+}
+
+.col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.col2 {
+  padding-top: 3.5rem;
+  padding-left: 4.5rem;
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4.5rem;
+}
+
+.footer {
+  font-size: 3rem;
+  color: white;
+  min-height: 9.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid var(--pri-den-gray-080);
+}
+
+.flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.flex__container ul {
+  padding: 1rem 0;
+}
+
+.flex__container a {
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 2rem 1rem 0;
+  text-decoration: none;
+}
+
+.flex__container a:nth-child(-n +2) {
+  border-right: 1px solid var(--pri-den-gray-080);
+}
+
+.flex__container a:nth-child(n + 2) {
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

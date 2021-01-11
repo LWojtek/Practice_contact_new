@@ -249,7 +249,7 @@ nav > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.2rem 0;
+  padding: 2rem 0;
 }
 
 .page__devider li {
@@ -647,6 +647,12 @@ footer > div {
   color: white;
   font-size: 3rem;
   padding: 1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social__icons i:hover {
+  color: var(--pri-den-gray-070);
 }
 
 .logo__footer {
@@ -686,6 +692,10 @@ footer > div {
   color: white;
   text-decoration: none;
   color: var(--pri-freshwater-blue-100-default);
+}
+
+.contact__wrapper a:hover {
+  opacity: .8;
 }
 
 .col1 {
@@ -747,7 +757,7 @@ footer > div {
 }
 
 .flex__container a {
-  color: white;
+  color: rgba(255, 255, 255, 0.808);
   font-size: 1.3rem;
   padding: 1rem 2rem 1rem 0;
   text-decoration: none;
@@ -759,5 +769,13 @@ footer > div {
 
 .flex__container a:nth-child(n + 2) {
   padding-left: 2rem;
+}
+
+.flex__container a:hover {
+  color: white;
+}
+
+.copy__info {
+  color: rgba(255, 255, 255, 0.808);
 }
 /*# sourceMappingURL=styles.css.map */

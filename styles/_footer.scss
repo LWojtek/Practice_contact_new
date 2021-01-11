@@ -17,6 +17,11 @@ footer {
             color: white;
             font-size: 3rem;
             padding: 1rem;
+            transition: .3s;
+
+            &:hover {
+                  color: var(--pri-den-gray-070);
+            }
       }
 }
 
@@ -54,8 +59,15 @@ footer {
             color: white;
             text-decoration: none;
             color: var(--pri-freshwater-blue-100-default);
+
+            &:hover {
+                  opacity: .8;
+            }
+
       }
 }
+
+
 
 .col1 {
       display: flex;
@@ -97,7 +109,7 @@ footer {
       }
 
       a {
-            color: white;
+            color: rgba(255, 255, 255, 0.808);
             font-size: 1.3rem;
             padding: 1rem 2rem 1rem 0;
             text-decoration: none;
@@ -109,5 +121,16 @@ footer {
             &:nth-child(n + 2) {
                   padding-left: 2rem;
             }
+
+
+            &:hover {
+                  color: rgb(255, 255, 255)
+            }
       }
+
+}
+
+
+.copy__info {
+      color: rgba(255, 255, 255, 0.808)
 }

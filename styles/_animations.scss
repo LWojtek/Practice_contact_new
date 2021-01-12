@@ -9,7 +9,27 @@
             transform: translateX(-50px) scaleX(.35);
       }
 
+
+
 }
+
+
+@media screen and(max-width:375px) {
+      @keyframes line-move {
+
+            0%,
+            100% {
+                  transform: translateX(0) scaleX(.35);
+            }
+
+            50% {
+                  transform: translateX(-30px) scaleX(.35);
+            }
+      }
+
+
+}
+
 
 @keyframes from-right {
       from {

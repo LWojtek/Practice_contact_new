@@ -7,8 +7,10 @@ const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav ul li a');
 
 
+
+
 document.addEventListener('scroll', () => {
-      if (scrollY > 500) {
+      if (scrollY > 500 && screen.width > 376) {
             logo.setAttribute('src', '../assets/white-bg.svg');
             navLinks.forEach(el => el.style.color = 'black')
             nav.style.backgroundColor = 'rgba(255,255,255, .7)'
@@ -17,7 +19,10 @@ document.addEventListener('scroll', () => {
             navLinks.forEach(el => el.style.color = 'white')
             nav.style.backgroundColor = 'transparent';
       }
+
 })
+
+
 
 /* ******************** */
 /* Paragraph Animations */
@@ -73,3 +78,39 @@ document.addEventListener('scroll', () => {
             hill3.classList.remove('hill3__animation')
       }
 })
+
+
+
+
+/* * B U R G E R  * */
+/* ****************** */
+
+
+const menuBtn = document.querySelector('.burger');
+const menu = document.querySelector('.nav__links');
+const burger = document.querySelector('.menu-btn')
+
+menuBtn.addEventListener('click', () => {
+      if (menu.classList.contains('active1')) {
+            menu.classList.remove('active1')
+
+
+      } else {
+            menu.classList.add('active1');
+            nav.style.backgroundColor = 'var(--pri-den-gray-100)';
+      }
+})
+
+
+let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+      if (!menuOpen) {
+            burger.classList.add('open');
+            menuOpen = true;
+
+      } else {
+            burger.classList.remove('open');
+            menuOpen = false;
+      }
+});

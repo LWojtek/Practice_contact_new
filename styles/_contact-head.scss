@@ -18,15 +18,18 @@
       display: flex;
       justify-content: space-between;
 
+
       @media screen and(max-width:624px) {
             display: block;
       }
+
 
 }
 
 .contact__content--text {
 
       flex-basis: 50%;
+      padding-right: 2rem;
 
       h2 {
             font-size: 6rem;
@@ -87,6 +90,8 @@
       &:first-child {
             position: relative;
             border-bottom: none !important;
+            overflow-x: visible;
+
 
             &::before {
                   content: "";
@@ -98,6 +103,7 @@
                   bottom: 0px;
                   z-index: -1;
                   width: 100vw;
+
             }
       }
 
